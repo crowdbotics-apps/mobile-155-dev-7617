@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Input_3: "", Input_7: "" }
+  state = { Input_3: "", Input_3: "", Input_7: "" }
 
   render = () => (
     <View
@@ -197,6 +197,72 @@ export class _Blank extends React.Component {
             value={this.state.Input_3}
             onChangeText={nextValue => this.setState({ Input_3: nextValue })}
           />
+          <Button
+            style={{
+              width: "100%",
+              marginLeft: 0,
+              marginRight: 0,
+              marginTop: 5,
+              marginBottom: 5,
+              paddingLeft: 5,
+              paddingRight: 5,
+              paddingTop: 5,
+              paddingBottom: 5,
+              overflow: "visible",
+              textAlign: "center",
+              verticalAlign: "baseline",
+              fontSize: 20,
+              color: "#000000",
+              backgroundColor: "#3366FF",
+              fontStyle: "normal",
+              fontWeight: "normal",
+              borderColor: "#000000",
+              borderStyle: "solid",
+              borderWidth: 0,
+              borderLeftWidth: 0,
+              borderRightWidth: 0,
+              borderTopWidth: 0,
+              borderBottomWidth: 0,
+              borderRadius: 0
+            }}
+            onPress={() => alert("Pressed!")}
+          >
+            Press me!
+          </Button>
+          <Input
+            placeholder="Sample text input placeholder"
+            editable={true}
+            textStyle={{ fontSize: 20, color: "#000000" }}
+            style={{
+              width: "100%",
+              marginLeft: 0,
+              marginRight: 0,
+              marginTop: 5,
+              marginBottom: 5,
+              paddingLeft: 5,
+              paddingRight: 5,
+              paddingTop: 5,
+              paddingBottom: 5,
+              overflow: "visible",
+              textAlign: "left",
+              verticalAlign: "baseline",
+              fontSize: 20,
+              color: "#000000",
+              backgroundColor: "#ffffff",
+              fontStyle: "normal",
+              fontWeight: "normal",
+              borderColor: "#000000",
+              borderStyle: "solid",
+              borderWidth: 0,
+              borderLeftWidth: 0,
+              borderRightWidth: 0,
+              borderTopWidth: 0,
+              borderBottomWidth: 0,
+              borderRadius: 0
+            }}
+            value={this.state.Input_3}
+            onChangeText={nextValue => this.setState({ Input_3: nextValue })}
+          />
         </View>
         <View
           style={{
@@ -234,9 +300,8 @@ export class _Blank extends React.Component {
             backgroundSize: "auto"
           }}
         >
-          <Button
+          <Text
             style={{
-              width: "100%",
               marginLeft: 0,
               marginRight: 0,
               marginTop: 5,
@@ -246,11 +311,11 @@ export class _Blank extends React.Component {
               paddingTop: 5,
               paddingBottom: 5,
               overflow: "visible",
-              textAlign: "center",
+              textAlign: "left",
               verticalAlign: "baseline",
               fontSize: 20,
               color: "#000000",
-              backgroundColor: "#3366FF",
+              backgroundColor: "#ffffff",
               fontStyle: "normal",
               fontWeight: "normal",
               borderColor: "#000000",
@@ -262,10 +327,9 @@ export class _Blank extends React.Component {
               borderBottomWidth: 0,
               borderRadius: 0
             }}
-            onPress={() => alert("Pressed!")}
           >
-            Press me!
-          </Button>
+            Sample text content
+          </Text>
           <Input
             placeholder="Number Input Placeholder"
             editable={true}
